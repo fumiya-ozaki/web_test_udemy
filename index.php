@@ -36,62 +36,35 @@
             <div class="information">
                 <h2>INFORMATION</h2>
                 <dl>
-                    <dt>2013-08-04</dt>
+                  <!-- numberposts:投稿数  category:カテゴリーのID -->
+                  <?php
+                    $infoPosts = get_posts('numberposts=3&category=4');
+                    foreach($infoPosts as $post): 
+                  ?>
+                    <dt><?php the_time('Y-m-d'); ?></dt>
                     <dd>
-                    <span class="tab tag_gyoumu">業務について</span>
-                    <a href="<?php bloginfo('url'); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。</dd><!--修正-->
-                    <dt>2013-08-03</dt>
-                    <dd>
-                    <span class="tab tag_release">リリース</span>
-                    <a href="<?php bloginfo('url'); ?>/sample">制作実績のページ</a>を更新しました。</dd><!--修正-->
-                    <dt>2013-08-02</dt>
-                    <dd>
-                    <span class="tab tag_gyoumu">業務について</span>
-                    <a href="<?php bloginfo('url'); ?>/sample">2012年（平成24年）度の採用情報</a>を更新しました。</dd><!--修正-->
-                    <dt>2013-08-01</dt>
-                    <dd>
-                    <span class="tab tag_gyoumu">業務について</span>
-                    <a href="<?php bloginfo('url'); ?>/sample">制作実績のページ</a>を更新しました。</dd><!--修正-->
+                    <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を更新しました。</dd><!--修正-->
+                  <?php endforeach; ?>
                 </dl>
             </div><!-- /.information -->
+
             <div class="information">
               <h2>Blog</h2>
                 <dl>
-                    <dt>2013-08-04</dt>
+                  <?php
+                    $infoPosts = get_posts('numberposts=3&category=5');
+                    foreach($infoPosts as $post): 
+                  ?>
+                    <dt><?php the_time('Y-m-d'); ?></dt>
                     <dd>
                     <div class="b_img">
-	                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/sample.png"><!--修正-->
+                      <?php the_post_thumbnail('thumbside'); ?>
                     </div>
                      <div class="b_right">
-                    <a href="<?php bloginfo('url'); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                      </div></dd>
-
-                    <dt>2013-08-04</dt>
-                    <dd>
-                    <div class="b_img">
-	                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/sample.png"><!--修正-->
-                    </div>
-                     <div class="b_right">
-                    <a href="<?php bloginfo('url'); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a><!--修正-->
-                     </div></dd>
-
-                    <dt>2013-08-04</dt>
-                    <dd>
-                    <div class="b_img">
-	                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/sample.png"><!--修正-->
-                    </div>
-                     <div class="b_right">
-                    <a href="<?php bloginfo('url'); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a><!--修正-->
-                     </div></dd>
-
-                    <dt>2013-08-04</dt>
-                    <dd>
-                    <div class="b_img">
-	                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/sample.png"><!--修正-->
-                    </div>
-                     <div class="b_right">
-                    <a href="<?php bloginfo('url'); ?>/sample">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a><!--修正-->
-                     </div></dd>
+                  <?php endforeach; ?>
                 </dl>
             </div><!-- /.information -->
 
