@@ -37,18 +37,25 @@ $(function() {
         <h1><a href="index.html"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1><!--修正-->
         <div id="menu">
             <ul>
-                <!-- <li class="home"><a href="index.html">ホーム</a></li> -->
-                <li class="home"><a href="<?php bloginfo('url'); ?>/">ホーム</a></li>
-                <!-- <li><a href="service.html">事業内容</a></li> -->
-                <li><a href="<?php bloginfo('url'); ?>/service.">事業内容</a></li>
-                <!-- <li><a href="company.html">会社概要</a></li> -->
-                <li><a href="<?php bloginfo('url'); ?>/company">会社概要</a></li>
-                <!-- <li><a href="archive-news.html">お知らせ</a></li> -->
-                <li><a href="<?php bloginfo('url'); ?>/archive-news">お知らせ</a></li>
-                <!-- <li><a href="archive-news.html">ブログ</a></li>                 -->
-                <li><a href="<?php bloginfo('url'); ?>/archive-news">ブログ</a><li>                
-                <!-- <li><a href="contact.html">お問い合わせ</a></li> -->
-                <li><a href="<?php bloginfo('url'); ?>/contact">お問い合わせ</a></li>
+            <?php wp_nav_menu( array( //追加
+              'theme_location'=>'place_global', 
+              'container'     =>'', 
+              'menu_class'    =>'',
+              'items_wrap' => '%3$s',//<ul>を出力しない
+              ));
+            ?>
             </ul>
+                <!-- <li class="home"><a href="index.html">ホーム</a></li> -->
+                <!-- <li><a href="service.html">事業内容</a></li> -->
+                <!-- <li><a href="company.html">会社概要</a></li> -->
+                <!-- <li><a href="archive-news.html">お知らせ</a></li> -->
+                <!-- <li><a href="archive-news.html">ブログ</a></li> -->
+                <!-- <li><a href="contact.html">お問い合わせ</a></li> -->
+                <!--<li class="home"><a href="<?php bloginfo('url'); ?>/">ホーム</a></li>-->
+                <!--<li><a href="<?php bloginfo('url'); ?>/service.">事業内容</a></li>-->
+                <!--<li><a href="<?php bloginfo('url'); ?>/company">会社概要</a></li>-->
+                <!--<li><a href="<?php bloginfo('url'); ?>/archive-news">お知らせ</a></li>-->
+                <!--<li><a href="<?php bloginfo('url'); ?>/archive-news">ブログ</a><li>-->
+                <!--<li><a href="<?php bloginfo('url'); ?>/contact">お問い合わせ</a></li>-->
         </div><!-- /#menu -->
     </div><!-- /#header -->
