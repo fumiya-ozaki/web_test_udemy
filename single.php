@@ -12,7 +12,7 @@
     <p><?php the_time('Y/m/d'); ?></p>
     <?php the_content(); ?>
     <?php endwhile; endif; ?>
-        <a href="<?php bloginfo('url'); ?>/contact"><button class="btn1">お問い合わせ</button></a>
+        <a href="<?php echo home_url(); ?>/contact"><button class="btn1">お問い合わせ</button></a>
     </div><!-- /#conL -->
 <?php get_sidebar(); ?>  <!--追加sidebar読み込み-->
   </div><!-- /#contents -->
