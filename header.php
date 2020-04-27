@@ -34,7 +34,7 @@ $(function() {
 <body>
 <div id="container">
     <div id="header">
-        <h1><a href="index.html"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1><!--修正-->
+        <h1><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1><!--修正-->
         <div id="menu">
             <ul>
             <?php wp_nav_menu( array( //追加
