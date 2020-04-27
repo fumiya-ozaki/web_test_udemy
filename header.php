@@ -8,9 +8,9 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <!-- <link rel="stylesheet" href="css/common.css" type="text/css" /> -->
-<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet"><!--書き換え-->
-<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.js"></script><!--修正-->
-<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/common.js"></script><!--修正-->
+<link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet"><!--書き換え-->
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script><!--修正-->
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/common.js"></script><!--修正-->
 <script type="text/javascript">
 $(function() {
     $('#slide').slideshow({
@@ -34,7 +34,7 @@ $(function() {
 <body>
 <div id="container">
     <div id="header">
-        <h1><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1><!--修正-->
+        <h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="SAMPLE WEB SITE" /></a></h1><!--修正-->
         <div id="menu">
             <ul>
             <?php wp_nav_menu( array( //追加
