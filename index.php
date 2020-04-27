@@ -2,33 +2,33 @@
 
     <div id="slide">
         <ul class="slideInner">
-            <li><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icatch01.jpg" alt="" width="940" height="300" /></li><!--修正-->
-            <li><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icatch02.jpg" alt="" width="940" height="300" /></li><!--修正-->
-            <li><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icatch03.jpg" alt="" width="940" height="300" /></li><!--修正-->
+            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch01.jpg" alt="" width="940" height="300" /></li><!--修正-->
+            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch02.jpg" alt="" width="940" height="300" /></li><!--修正-->
+            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icatch03.jpg" alt="" width="940" height="300" /></li><!--修正-->
         </ul>
-         <div class="slidePrev"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/nav_prev.png" alt="前へ"></div><!--修正-->
-         <div class="slideNext"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/nav_next.png" alt="次へ"></div><!--修正-->
+         <div class="slidePrev"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nav_prev.png" alt="前へ"></div><!--修正-->
+         <div class="slideNext"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nav_next.png" alt="次へ"></div><!--修正-->
          <div class="controlNav"></div>
     </div><!-- /#slide -->
     <div id="contents">
         <div class="topNavi">
             <div class="topNaviColumn">
                 <h2>社長メッセージ</h2>
-                <div class="topNaviPhoto"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo01.jpg" alt="" /></div><!--修正-->
+                <div class="topNaviPhoto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo01.jpg" alt="" /></div><!--修正-->
                 <p>ホームページを御覧いただきありがとうございます。弊社はお客様満足度を最優先いたします。</p>
 
             </div><!-- /.topNaviColumn -->
             <div class="topNaviColumn">
                 <h2>事業内容</h2>
-                <div class="topNaviPhoto"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo02.jpg" alt="" /></div><!--修正-->
+                <div class="topNaviPhoto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo02.jpg" alt="" /></div><!--修正-->
                 <p>事業内容です。あいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
-                <p class="topNaviDetail"><a href="<?php bloginfo('url'); ?>/service">詳しくはこちら</a></p>
+                <p class="topNaviDetail"><a href="<?php echo home_url(); ?>/service">詳しくはこちら</a></p>
             </div><!-- /.topNaviColumn -->
             <div class="topNaviColumn">
                 <h2>会社概要</h2>
-                <div class="topNaviPhoto"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo03.jpg" alt="" /></div><!--修正-->
+                <div class="topNaviPhoto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo03.jpg" alt="" /></div><!--修正-->
                 <p>会社概要です。左右のコンテンツでテキスト量が異なっても、下の｢詳しくはこちら｣が揃うようになっています。</p>
-                <p class="topNaviDetail"><a href="<?php bloginfo('url'); ?>/company">詳しくはこちら</a></p>
+                <p class="topNaviDetail"><a href="<?php echo home_url(); ?>/company">詳しくはこちら</a></p>
             </div><!-- /.topNaviColumn -->
         </div><!-- /.topNavi -->
         
@@ -72,15 +72,15 @@
                 <h3>サービス内容</h3>
                 <p>ネット事業です。あいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
                 <ul>
-                    <li><a href="<?php bloginfo('url'); ?>/service#s1">ホームページ制作</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/service#s2">広告代理</a></li>
+                    <li><a href="<?php echo home_url(); ?>/service#s1">ホームページ制作</a></li>
+                    <li><a href="<?php echo home_url(); ?>/service#s2">広告代理</a></li>
                 </ul>
             </div><!-- /.submenu -->
             <div class="bnrL">
                 <ul>
-                    <li><a href="<?php bloginfo('url'); ?>/index"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
-                    <li><a href="<?php bloginfo('url'); ?>/index"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
-                    <li><a href="<?php bloginfo('url'); ?>/index"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
+                    <li><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
+                    <li><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
+                    <li><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bnr_l.jpg" alt="" /></a></li><!--修正-->
                 </ul>
             </div><!-- /.bnrL -->
         </div><!-- /.conL -->

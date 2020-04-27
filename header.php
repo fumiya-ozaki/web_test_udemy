@@ -28,7 +28,7 @@ $(function() {
 });
 </script>
 <!-- <title>あなたのサイト名などお書きください</title> -->
-<title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title> <!--書き換え-->
+<title>web_study_udemy | <?php wp_title(); ?></title> <!--書き換え-->
 <?php wp_head(); ?><!--追加-->
 </head>
 <body>
