@@ -56,7 +56,7 @@
               </dl>
             </div><!-- /.information -->
         <?php } ?>
-
+        <?php wp_pagenavi(); ?>
     </div><!-- /#conL -->
 <?php get_sidebar(); ?>  <!--追加sidebar読み込み-->
   </div><!-- /#contents -->
