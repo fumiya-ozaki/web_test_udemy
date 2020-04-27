@@ -1,5 +1,11 @@
 <?php get_header(); ?> <!--追加header読み込み-->
   <div id="contents">
+  <div class="">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
     <div id="conL">
       
         <?php if (in_category(array('5'))) {?>
